@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
-import Header from '../components/Header';
+import Screen from '../components/Screen';
 import FloorButton from '../components/FloorButton';
 import _ from "lodash";
 
@@ -32,12 +32,9 @@ const Home: NextPage = () => {
         <meta name="keywords" content="Blog、zzk Blog、博客、zzk的博客" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <main>
-        <img className='w-full h-auto lg:h-screen object-cover' src='./images/homepage.jpg' alt='homelog' />
-        <div className='h-[1080px]'>
-        </div>
-      </main>
+      {/* Screen */}
+      <Screen />
+      {/* FloorButton */}
       <FloorButton isShow={isShow} />
     </div>
   )
